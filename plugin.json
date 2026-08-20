@@ -1,0 +1,97 @@
+{
+  "name": "tidyCH",
+  "version": "0.4.1",
+  "description": "Curate profile-scoped channel logos and clean channel names, with optional Lineuparr compatibility.",
+  "author": "ayala",
+  "license": "MIT",
+  "repo_url": "https://github.com/ayala/tidyCH",
+  "help_url": "https://github.com/ayala/tidyCH",
+  "min_dispatcharr_version": "v0.20.0",
+  "fields": [],
+  "actions": [
+    {
+      "id": "validate_settings",
+      "label": "Validate Settings",
+      "button_label": "✅ Validate",
+      "description": "Validate the repository and profile-to-folder mappings",
+      "button_variant": "outline",
+      "button_color": "blue"
+    },
+    {
+      "id": "preview_logo_matches",
+      "label": "Preview Logo Matches",
+      "button_label": "👁️ Preview Logos",
+      "description": "Create a CSV preview without changing any channel logos",
+      "button_variant": "outline",
+      "button_color": "cyan"
+    },
+    {
+      "id": "assign_logos",
+      "label": "Assign Logos",
+      "button_label": "🖼️ Assign Logos",
+      "description": "Assign repository logos to enabled channels in mapped profiles",
+      "button_variant": "filled",
+      "button_color": "blue",
+      "confirm": {
+        "message": "Assign matched repository logos to channels in the mapped profiles?"
+      }
+    },
+    {
+      "id": "preview_name_changes",
+      "label": "Preview Name Changes",
+      "button_label": "👁️ Preview Names",
+      "description": "Create a CSV preview of profile-scoped name normalization without changing channels",
+      "button_variant": "outline",
+      "button_color": "cyan"
+    },
+    {
+      "id": "apply_name_changes",
+      "label": "Apply Name Changes",
+      "button_label": "✨ Normalize Names",
+      "description": "Apply collision-safe trailing-marker cleanup to enabled channels in configured profiles",
+      "button_variant": "filled",
+      "button_color": "blue",
+      "confirm": {
+        "message": "Normalize matched channel names? A reversible history record will be saved."
+      }
+    },
+    {
+      "id": "rollback_name_changes",
+      "label": "Rollback Last Name Changes",
+      "button_label": "↩️ Roll Back Names",
+      "description": "Restore the most recent applied normalization run when channels have not changed since",
+      "button_variant": "outline",
+      "button_color": "red",
+      "confirm": {
+        "message": "Roll back the most recent channel name normalization run?"
+      }
+    },
+    {
+      "id": "generate_lineuparr_lineups",
+      "label": "Generate Lineuparr-Compatible Lineups",
+      "button_label": "🧩 Generate Lineups",
+      "description": "Generate normalized lineup copies with original names retained as Lineuparr matching aliases",
+      "button_variant": "outline",
+      "button_color": "blue",
+      "confirm": {
+        "message": "Generate the configured Lineuparr-compatible lineup files? Existing generated files will be backed up."
+      }
+    },
+    {
+      "id": "plugin_status",
+      "label": "Show Status",
+      "button_label": "📊 Status",
+      "description": "Show current progress or the most recent result",
+      "button_variant": "outline",
+      "button_color": "blue"
+    },
+    {
+      "id": "cancel_operation",
+      "label": "Cancel Operation",
+      "button_label": "⏹️ Cancel",
+      "description": "Request cancellation of the running preview or assignment",
+      "button_variant": "outline",
+      "button_color": "red"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+"""tidyCH Dispatcharr plugin."""
