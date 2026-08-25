@@ -1,6 +1,7 @@
 {
   "registry_name": "tidyCH Plugin Repo",
-  "root_url": "https://raw.githubusercontent.com/ayala/tidyCH/main",
+  "registry_url": "https://github.com/ayala/tidyCH",
+  "root_url": "https://raw.githubusercontent.com/ayala/tidyCH/refs/heads/main",
   "plugins": [
     {
       "slug": "tidych",
