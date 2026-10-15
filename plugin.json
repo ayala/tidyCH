@@ -1,6 +1,6 @@
 {
   "name": "tidyCH",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Curate profile-scoped channel logos and clean channel names, with optional Lineuparr compatibility.",
   "author": "ayala",
   "license": "MIT",

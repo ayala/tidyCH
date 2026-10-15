@@ -113,6 +113,11 @@ def normalize_name(value, country_code=None, is_filename=False):
                 name,
                 flags=re.IGNORECASE,
             )
+    # Preserve branding punctuation that distinguishes otherwise identical
+    # channel names (for example, "Movies" and "Movies!"). Apply the same
+    # substitution to channel names and filenames before generic punctuation
+    # is removed so each channel can match its own logo deterministically.
+    name = name.replace("!", " exclamation ")
     name = name.replace("-", " ").replace("_", " ")
     name = name.replace("&", " and ").replace("+", " plus ")
     name = re.sub(r"[^\w\s]", "", name)

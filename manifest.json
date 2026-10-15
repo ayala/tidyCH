@@ -8,13 +8,13 @@
       "name": "tidyCH",
       "description": "Profile-scoped channel logo assignment and safe channel-name normalization for Dispatcharr.",
       "author": "ayala",
-      "latest_version": "0.4.1",
-      "last_updated": "2026-08-25T18:20:00Z",
+      "latest_version": "0.4.2",
+      "last_updated": "2026-10-15T14:05:21Z",
       "license": "MIT",
       "repo_url": "https://github.com/ayala/tidyCH",
-      "latest_url": "releases/v0.4.1/tidych-0.4.1.zip",
-      "latest_sha256": "6e3ea3df29aaf473db0d9d96d8cf08a0651ef26a1a3a9db3eee768d9a94a891e",
-      "latest_size": 37,
+      "latest_url": "releases/v0.4.2/tidych-0.4.2.zip",
+      "latest_sha256": "f4ad93047cdf6a60a713bb7ae95661b86e81359fd9b916f486c5e8535865c718",
+      "latest_size": 38103,
       "icon_url": "logo.png",
       "min_dispatcharr_version": "v0.20.0"
     }

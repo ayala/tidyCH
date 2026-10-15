@@ -20,6 +20,10 @@ UK Profile | uk | logos/uk
 Existing logos are preserved by default. Channels shared by mapped profiles
 that select different logo sources are reported and skipped.
 
+An exclamation mark is preserved as a meaningful part of a channel name. For
+example, `Movies` matches `movies-us.png`, while `Movies!` matches
+`movies!-us.png`.
+
 ## Channel name normalization
 
 Add profile-specific trailing-marker rules:
